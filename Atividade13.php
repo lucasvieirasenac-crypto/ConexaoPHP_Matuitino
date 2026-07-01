@@ -1,4 +1,5 @@
 <?php 
+include "conexao.php";
 
 $numero1 = 18;
 $numero2 = 20;
