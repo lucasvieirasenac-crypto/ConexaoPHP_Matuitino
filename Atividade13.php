@@ -10,9 +10,9 @@ $sql = "INSERT INTO calculo (numero1, numero2, numero3, resultado)
 VALUES ($numero1, $numero2, $numero3, $resultado)";
 
 if ($conexao->query($sql)) {
-    echo "Dados Salvos com sucesso!";
+    echo "<br> Dados Salvos com sucesso!";
 } else {
-    echo "Erro ao salvar";
+    echo "<br> Erro ao salvar";
 }
 
 
