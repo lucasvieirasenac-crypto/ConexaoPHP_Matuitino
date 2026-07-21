@@ -2,7 +2,7 @@
 $host = "localhost";
 $usuario = "root";
 $senha = "senac";
-$banco = "guardar";
+$banco = "produto";
 $porta = "3307";
 
 
