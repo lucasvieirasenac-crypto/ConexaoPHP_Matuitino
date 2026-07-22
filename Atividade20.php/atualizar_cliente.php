@@ -1,28 +1,23 @@
-<?php 
-include"banco.php";
+<?php
+include "banco.php";
 
 $id = $_POST['id'];
-
 $nome = $_POST['nome'];
 $idade = $_POST['idade'];
 $email = $_POST['email'];
 $telefone = $_POST['telefone'];
 $cidade = $_POST['cidade'];
 
-$sql = "UPDATE form SET
-nome = '$nome';
-idade = '$idade';
-email = '$email';
-telefone = '$telefone';
-cidade = '$cidade' WHERE id = $id";
+$sql = "UPDATE form SET 
+nome = '$nome', 
+idade = '$idade', 
+email = '$email', 
+telefone = '$telefone', 
+cidade = '$cidade' WHERE id = $id ";
 
 if ($conexao->query($sql)) {
     header("location:listar_cliente.php");
-
     exit();
-
-} else{
+} else {
     echo "Erro ao atualizar o cliente";
 }
-
-?>
