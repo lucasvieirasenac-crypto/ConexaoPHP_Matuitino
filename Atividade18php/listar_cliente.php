@@ -11,7 +11,10 @@ $resultado = $conexao ->query($sql);
 //iremos usar um laço de repetição while(enquanto)
 while ($cliente = $resultado -> fetch_assoc()) {
     echo "Nome Completo:" .$cliente ['nome']. "<br>";
-    echo "Cidade:" .$cliente ['cidade']. "<br>";
+    echo "Idade:" .$cliente ['idade']. "<br>";
+    echo "Email".$cliente ["email"]."<br>";
+    echo "Telefone".$cliente ["telefone"]."<br>";
+    echo "Cidade".$cliente ["cidade"]."<br>";
 
 }
 ?>

@@ -22,7 +22,6 @@ if ($conexao->query($sql)) {
 
     exit();
 
-
 } else{
     echo "Erro ao atualizar o cliente";
 }
