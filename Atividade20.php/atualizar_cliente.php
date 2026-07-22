@@ -16,4 +16,15 @@ email = '$email';
 telefone = '$telefone';
 cidade = '$cidade' WHERE id = $id
 ";
+
+if ($conexao->query($sql)) {
+    header("location:listar_cliente.php");
+
+    exit();
+
+
+} else{
+    echo "Erro ao atualizar o cliente";
+}
+
 ?>
