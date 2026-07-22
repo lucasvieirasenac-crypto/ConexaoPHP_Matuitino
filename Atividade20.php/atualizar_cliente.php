@@ -1,7 +1,7 @@
 <?php 
 include"banco.php";
 
-$id = $_GET['id'];
+$id = $_POST['id'];
 
 $nome = $_POST['nome'];
 $idade = $_POST['idade'];
@@ -14,8 +14,7 @@ nome = '$nome';
 idade = '$idade';
 email = '$email';
 telefone = '$telefone';
-cidade = '$cidade' WHERE id = $id
-";
+cidade = '$cidade' WHERE id = $id";
 
 if ($conexao->query($sql)) {
     header("location:listar_cliente.php");
