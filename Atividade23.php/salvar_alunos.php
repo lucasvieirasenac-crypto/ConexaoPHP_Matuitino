@@ -2,16 +2,15 @@
 
 include "banco.php";
 
-$id = $_POST['id'];
+
 $nome = $_POST['nome'];
 $idade = $_POST['idade'];
-$email = $_POST['email'];
-$telefone = $_POST['telefone'];
+$curso = $_POST['curso'];
 $cidade = $_POST['cidade'];
 
 
-$sql = "INSERT INTO form (nome, idade, email, telefone, cidade)
-VALUES ('$nome', $idade, '$email', '$telefone', '$cidade')";
+$sql = "INSERT INTO alunos (nome, idade, curso, cidade)
+VALUES ('$nome', $idade, '$curso', '$cidade')";
 
 
 if ($conexao->query($sql)) {

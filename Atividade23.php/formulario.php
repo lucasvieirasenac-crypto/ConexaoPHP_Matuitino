@@ -13,12 +13,12 @@
 
 <body>
 
-    <form action="./salvar_cliente.php" method="POST">
+    <form action="./salvar_alunos.php" method="POST">
 
         <h1>Formulario</h1>
 
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nome Completo</label>
+            <label for="exampleInputEmail1" class="form-label">Nome</label>
             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nome">
         </div>
 
@@ -29,13 +29,8 @@
         </div>
 
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputPassword1" name="email">
-        </div>
-
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Telefone</label>
-            <input type="tel" class="form-control" id="exampleInputPassword1" name="telefone">
+            <label for="exampleInputPassword1" class="form-label">Curso</label>
+            <input type="curso" class="form-control" id="exampleInputPassword1" name="curso">
         </div>
 
         <div class="mb-3">
