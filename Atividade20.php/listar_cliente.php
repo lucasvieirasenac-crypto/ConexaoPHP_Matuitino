@@ -4,17 +4,19 @@ include "Banco.php";
 
 $sql = "SELECT * FROM form";
 
-$resultado = $conexao ->query($sql);
+$resultado = $conexao->query($sql);
 
-while ($cliente = $resultado -> fetch_assoc()) {
-    echo "Nome Completo:" .$cliente ['nome']. "<br>";
-    echo "Idade:" .$cliente ['idade']. "<br>";
-    echo "Email:".$cliente ["email"]."<br>";
-    echo "Telefone:".$cliente ["telefone"]."<br>";
-    echo "Cidade:".$cliente ["cidade"]."<br>";
+while ($cliente = $resultado->fetch_assoc()) {
+    echo "Nome Completo:" . $cliente['nome'] . "<br>";
+    echo "Idade:" . $cliente['idade'] . "<br>";
+    echo "Email:" . $cliente["email"] . "<br>";
+    echo "Telefone:" . $cliente["telefone"] . "<br>";
+    echo "Cidade:" . $cliente["cidade"] . "<br>";
 
-    echo "<a href='editar_cliente.php?id=".$cliente['id']."'> <button> Atualizar </button> </a>";
+    echo "<a href='formulario.php?id=" . $cliente['id'] . "'> <button> Atualizar </button> </a>";
+    echo "<a href='editar_cliente.php?id=" . $cliente['id'] . "'> <button> Editar </button> </a>";
+    echo "<a href='excluir_cliente.php?id=" . $cliente['id'] . "'> <button> Excluir </button> </a>";
+
 
     echo "<hr>";
 }
-?>
