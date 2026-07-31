@@ -14,6 +14,7 @@ while ($funcionarios = $resultado -> fetch_assoc()) {
     echo "data_de_admissão:".$funcionarios ["data_de_admissão"]."<br>";
 
     echo "<a href='editar_funcionarios.php?id=".$funcionarios['id']."'> <button> Atualizar </button> </a>";
+    echo "<a href='excluir_funcionarios.php?id=" .$funcionarios['id']."'> <button> Excluir </button> </a>";
 
     echo "<hr>";
 }
